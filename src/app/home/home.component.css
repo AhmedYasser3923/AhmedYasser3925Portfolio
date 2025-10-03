@@ -1,0 +1,19 @@
+.img0 {
+  width: auto; /* keep aspect ratio */
+  display: block; /* optional but safe */
+  max-height: 1000px; /* fallback for large screens */
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .img0 {
+    max-height: 700px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .img0 {
+    max-height: 500px;
+  }
+}

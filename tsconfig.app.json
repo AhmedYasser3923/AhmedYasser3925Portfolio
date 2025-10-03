@@ -1,3 +1,28 @@
+// /* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+// /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+// {
+//   "extends": "./tsconfig.json",
+//   "compilerOptions": {
+//     "outDir": "./out-tsc/app",
+//     "types": [
+//       "node"
+//     ]
+//   },
+//   "files": [
+//     "src/main.ts",
+//     "src/main.server.ts",
+//     "src/server.ts"
+//   ],
+//   "include": [
+//     "src/**/*.d.ts",
+//       "src/**/*.ts"
+//   ],
+//   "exclude": [
+//     "**/*.spec.ts",
+//         "test.ts"
+// ]
+
+// }
 /* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
 /* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
 {
@@ -9,11 +34,18 @@
     ]
   },
   "files": [
-    "src/main.ts",
-    "src/main.server.ts",
-    "src/server.ts"
+    "src/main.ts"   /* Keep main.ts for browser build */
   ],
   "include": [
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "**/*.spec.ts",          /* Exclude all test files */
+    "test.ts",               /* Optional test entry file */
+    "src/main.server.ts",    /* Exclude server-side files */
+    "src/server.ts",
+    "src/app/app.config.server.ts",
+    "src/app/app.routes.server.ts"
   ]
 }

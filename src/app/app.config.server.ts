@@ -11,4 +11,4 @@ const serverConfig: ApplicationConfig = {
   ]
 };
 
-export const config = mergeApplicationConfig(appConfig, serverConfig);
+export const appConfigServer = mergeApplicationConfig(appConfig, serverConfig);
